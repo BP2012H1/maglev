@@ -149,6 +149,15 @@ RUBY.require 'kernel/common/regexp.rb'
 RUBY.require 'kernel/common/io.rb'
 RUBY.require 'kernel/common/filetest.rb'
 
+# Common 1.9 code
+RUBY.require 'kernel/common/encoding.rb'
+RUBY.require 'kernel/common/basicobject.rb'
+RUBY.require 'kernel/common/kernel19.rb'
+RUBY.require 'kernel/common/array19.rb'
+RUBY.require 'kernel/common/regexp19.rb'
+RUBY.require 'kernel/common/symbol19.rb'
+RUBY.require 'kernel/common/thread19.rb'
+
 # Include the delta code.  The delta code overwrites the rubinius
 # common code with gemstone specific mods.
 RUBY.require 'kernel/delta/hash.rb'
